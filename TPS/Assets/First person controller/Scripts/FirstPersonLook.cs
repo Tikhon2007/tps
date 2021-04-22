@@ -26,8 +26,10 @@ public class FirstPersonLook : MonoBehaviour
         Vector2 smoothMouseDelta = Vector2.Scale(new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")), Vector2.one * sensitivity * smoothing);
         appliedMouseDelta = Vector2.Lerp(appliedMouseDelta, smoothMouseDelta, 1 / smoothing);
         currentMouseLook += appliedMouseDelta;
+        //меняешь - 90 и 90(но про минус не забудь) для того что бы поменять на сколько камера не может поворачиваться вверх и вниз
         currentMouseLook.y = Mathf.Clamp(currentMouseLook.y, -30, 30);
-        //currentMouseLook.x = Mathf.Clamp(currentMouseLook.x, -30, 30);
+        //меняешь -90 и 90 (но про минус не забудь) для того что бы поменять на сколько камера не может поворачиваться на право и лево
+        currentMouseLook.x = Mathf.Clamp(currentMouseLook.x, -90, 90); 
 
         // Rotate camera and controller.
         //transform.localRotation =  Quaternion.AngleAxis(-currentMouseLook.y, Vector3.right);
