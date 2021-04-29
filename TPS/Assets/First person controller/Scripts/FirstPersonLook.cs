@@ -29,7 +29,7 @@ public class FirstPersonLook : MonoBehaviour
         //меняешь - 90 и 90(но про минус не забудь) для того что бы поменять на сколько камера не может поворачиваться вверх и вниз
         currentMouseLook.y = Mathf.Clamp(currentMouseLook.y, -30, 30);
         //меняешь -90 и 90 (но про минус не забудь) для того что бы поменять на сколько камера не может поворачиваться на право и лево
-        currentMouseLook.x = Mathf.Clamp(currentMouseLook.x, -90, 90); 
+        //currentMouseLook.x = Mathf.Clamp(currentMouseLook.x, -90, 90); 
 
         // Rotate camera and controller.
         //transform.localRotation =  Quaternion.AngleAxis(-currentMouseLook.y, Vector3.right);
