@@ -8,6 +8,7 @@ public class ShootSystem : MonoBehaviour
     public int CurAmmo; // Кол-во патронов
     public int Ammo; // Кол-во патронов в 1ой обойме
     public AudioClip Fire; // Звук выстрела
+    //public AudioClip Reload // звук перезарядки
     public float ShootSpeed; // Скорострельность
     public float ReloadSpeed; // Скорость перезарядки  
     public float ReloadTimer = 0.0f; // Стандартное время перезарядки(не трогать)
