@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &83969903 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 5112e6444b23577429168ceb76476ae4, type: 3}
+  m_PrefabInstance: {fileID: 127491767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &127491767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1071,7 +1076,7 @@ GameObject:
   - component: {fileID: 521466970}
   - component: {fileID: 521466969}
   m_Layer: 0
-  m_Name: Cylinder 2
+  m_Name: ' cam 2'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1400,7 +1405,7 @@ GameObject:
   - component: {fileID: 1185823516}
   - component: {fileID: 1185823515}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: cam 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1497,7 +1502,7 @@ GameObject:
   - component: {fileID: 1209343685}
   - component: {fileID: 1209343684}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1792,12 +1797,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0bd5d8ecd45e5a449896480f8805be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AmmoCount: 10
-  CurAmmo: 10
-  Ammo: 3
+  AmmoCount: 100
+  CurAmmo: 100
+  Ammo: 20
   Fire: {fileID: 0}
-  ShootSpeed: 1
-  ReloadSpeed: 5
+  ShootSpeed: 0
+  ReloadSpeed: 0
   ReloadTimer: 0
   ShootTimer: 0
   bullet: {fileID: 7131987222888615944, guid: 5d503dc456f26fc48aae353db568dd4c, type: 3}
@@ -1808,10 +1813,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923703046}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.116, y: 1.519, z: 1.313}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.4838027, y: -0.5025377, z: -0.5168219, w: -0.49627203}
+  m_LocalPosition: {x: -0.0005, y: 0.0943, z: -0.3334}
+  m_LocalScale: {x: 0.74552315, y: 0.7455232, z: 0.74552333}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 83969903}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -91.536, y: -182.755, z: 275.00598}
